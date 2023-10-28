@@ -141,11 +141,20 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResTarget \
-    OPlusCarrierConfigResCommon \
-    OPlusFrameworksResCommon \
-    OPlusSettingsResCommon \
-    OPlusSystemUIResCommon
+    Frameworks \
+    OPlus8Frameworks \
+    OPlus8Settings \
+    OPlus8SystemUI \
+    OPlus8ProFrameworks \
+    OPlus8ProSettings \
+    OPlus8ProSystemUI \
+    OPlus9RFrameworks \
+    OPlus9RSettings \
+    OPlus9RSystemUI \
+    OPlusCarrierConfig \
+    OPlusFrameworks \
+    OPlusSettings \
+    OPlusSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
