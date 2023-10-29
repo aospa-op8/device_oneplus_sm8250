@@ -115,7 +115,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 # Audio - OOS
 vendor/etc/acdbdata/adsp_avs_config.acdb|214452a53d193f189515fce96bce59697ce9ac44
 vendor/etc/audio_io_policy.conf:vendor/etc/audio_io_policy.conf
-vendor/lib/hw/sound_trigger.primary.kona.so|5cf00791af03476d47633826565a3ef6a9243720
 vendor/lib/libAlacSwDec.so|e2357a7115eb39366c2e9af05db154f760fb2682
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
 vendor/lib/libFlacSwDec.so|f7595743a7fbf36cb540e11fb76774cab4bb543a
@@ -167,7 +166,6 @@ vendor/lib/soundfx/libqcreverb.so|e90d723c6599b68d69109650e017d85f1ea9a582
 vendor/lib/soundfx/libqcvirt.so|942ce731900b949a262f00a0702af899c3ecc82b
 vendor/lib/soundfx/libshoebox.so|214d5fefd21c617bdfa05255fe667127b4242556
 vendor/lib/vendor.qti.voiceprint@1.0.so|301cb7543d2e3add3fbd918f273a60243596c64a
-vendor/lib64/hw/sound_trigger.primary.kona.so|48c0660951eb5a683caee2a7c1d7fbb19aad1e00
 vendor/lib64/libAlacSwDec.so|3235d624acb038d37471360efd8bcd2f6c7509a4
 vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
 vendor/lib64/libFlacSwDec.so|1bb11da10c1f8541a455b33e7f7a4379c3ffe993
@@ -661,10 +659,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
-# Diag
-vendor/lib/libdiag.so
-vendor/lib64/libdiag.so
-
 # Display calibration data - OOS
 vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml|a16503f41e6b5308efd012a2966e7ee7161d1b4b
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml|11d8798a7fd52cb5df625cffddb579c521ee00d3
@@ -823,11 +817,6 @@ odm/vendor/firmware/gfp9638.b05:odm/19811/vendor/firmware/gfp9638.b05|5e3633ed48
 odm/vendor/firmware/gfp9638.b06:odm/19811/vendor/firmware/gfp9638.b06|388d940358ed3bc76adc3cf26e353e2a11d121e1
 odm/vendor/firmware/gfp9638.b07:odm/19811/vendor/firmware/gfp9638.b07|45e24df3a6e7f2e3ad0e49c184ad2dd1f423f17c
 odm/vendor/firmware/gfp9638.mdt:odm/19811/vendor/firmware/gfp9638.mdt|9896839036b5ac6ce77d6a51664f3a4416707db1
-
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno firmware) - OOS
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
@@ -1096,29 +1085,10 @@ vendor/lib64/libsystem_health_mon.so
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-
-# QTEE
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_listener.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RemoteFS
 vendor/bin/rmt_storage
@@ -1155,17 +1125,12 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 # SecureMSM
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
-vendor/lib64/libqisl.so
 vendor/lib64/libspl.so
-vendor/lib64/libtzdrmgenprov.so
 
 # Sensors - OOS
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service|99ab460139e13431ee897e0b65092fbcb0c931c4
@@ -1329,7 +1294,6 @@ odm/etc/sensor/config/kona_stk3a6x_0.json:odm/19811/etc/sensor/config/kona_stk3a
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
@@ -1354,7 +1318,6 @@ vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware - OOS
 odm/firmware/tp/19065/FW_S6SY791_SAMSUNG.bin|fe75cb47b1c6b8221de1ce78966fa35f1b7c69d1
@@ -2397,7 +2360,6 @@ odm/etc/init/android.hardware.drm@1.3-service.widevine.rc|7801ccf2718b30ffac54c4
 odm/lib64/liboemcrypto.so|5876fe1812e630de5417d3f028b43c02139c32ad
 odm/lib64/libwvhidl.so|e03c6fce115a54db04aa1eaf64c46955198c00a9
 odm/lib64/mediadrm/libwvdrmengine.so|779d2263238377f00c8062caff6e53c04c21452b
-vendor/lib64/libtrustedapploader.so|030366cf9b29f9beacea371f1c2a8781664be851
 -odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 
 # WiFi

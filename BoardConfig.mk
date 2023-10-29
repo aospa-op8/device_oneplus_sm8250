@@ -25,9 +25,6 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -91,7 +88,6 @@ KERNEL_DEFCONFIG := vendor/kona-perf_defconfig
 KERNEL_FULL_LLVM := true
 
 # Platform
-BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
 
 # Metadata
@@ -136,9 +132,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include hardware/oplus/sepolicy/qti/SEPolicy.mk

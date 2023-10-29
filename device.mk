@@ -21,11 +21,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant@1.0.vendor
-
 # Alert slider
 PRODUCT_PACKAGES += \
     KeyHandler \
@@ -102,10 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -126,14 +117,6 @@ PRODUCT_PACKAGES += \
     init.overlayfs.rc \
     init.target.rc \
     ueventd.oplus.rc
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -181,10 +164,12 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     init \
+    keymaster \
     media \
     nfc \
     overlay \
     perf \
+    qseecomd \
     telephony \
     usb \
     wfd \
